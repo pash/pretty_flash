@@ -35,6 +35,18 @@ one you're using into application.js and you're all set. If you're not using eit
 
 Enjoy!
 
+h2. In case of multiple flashes in one page
+
+<pre><code>
+  /* FIX FOR MULTPLE FLASHES */
+	
+	if($('.warning').length > 0) {
+	  if($('.notice').length > 0) {
+	    $(".warning").css('margin-bottom', '60px');
+	  }
+	}
+</code></pre>
+
 h2. Licensing
 
 Copyright (c) 2008 Ryan Heath, released under the MIT license
